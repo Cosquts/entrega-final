@@ -1,0 +1,82 @@
+@import "../base/variables";
+@import "../base/mixin";
+
+/*Estilos para el menu desplegable */
+
+.barra-nav {
+  .menu-mobile {
+    background-image: linear-gradient($color-principal, $color-secundario);
+
+    &__header {
+      padding-right: 30px;
+
+      &-img {
+        @include logo;
+
+        &:active {
+          @include logo-active;
+        }
+      }
+      &-cerrar {
+        background-color: whitesmoke;
+      }
+
+
+    }
+
+    &__body {
+      &-a {
+        color: $color-secundario;
+        border-left: 4px solid $color-secundario;
+        padding-left: 25px;
+        margin: 5px;
+        transition: all 0.2s ease;
+
+        &:focus {
+          transform: scale(1.04);
+          border-left: 6px solid white;
+        }
+
+        &:active {
+          transform: scale(0.98);
+          border-left: 6px solid white;
+        }
+      }
+
+      &-dropdown {
+        color: $color-secundario ;
+        border-left: 4px solid $color-secundario;
+        margin: 5px;
+        padding-left: 25px;
+        font-size: 20px;
+
+        &:active {
+          border-left: 6px solid white ;
+        }
+        &-a{
+          color: $color-secundario;
+        }
+
+        &-open{
+          background-color: $color-secundario;
+          &-a{
+           color: $color-principal ;
+           &:active{
+            background-color: red;
+           }
+           &:hover{
+            background-color: $color-principal;
+            color: $color-secundario;
+            transition: "backgorund-color" 0.3s ease;
+            border-radius: 10px;
+           }
+          }
+        }
+        
+      }
+
+    }
+
+
+  }
+}
