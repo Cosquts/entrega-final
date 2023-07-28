@@ -49,6 +49,7 @@
         margin: 5px;
         padding-left: 25px;
         font-size: 20px;
+        
 
         &:active {
           border-left: 6px solid white ;
@@ -61,14 +62,15 @@
           background-color: $color-secundario;
           &-a{
            color: $color-principal ;
-           &:active{
-            background-color: red;
-           }
            &:hover{
             background-color: $color-principal;
             color: $color-secundario;
-            transition: "backgorund-color" 0.3s ease;
-            border-radius: 10px;
+           }
+           &:active{
+            background-color: $color-principal;
+            color: $color-secundario;
+            transition: all 0.3s ease;
+            border-radius: 0 20px 20px 0;
            }
           }
         }
