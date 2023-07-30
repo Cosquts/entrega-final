@@ -1,6 +1,7 @@
 @import "../base/mixin";
 @import "../base/variables";
 
+/* ESTILOS DE CONTACTO  */
 .contact-container {
   background-image: linear-gradient($color-claro, $color-principal);
 
@@ -77,13 +78,40 @@
           border: 0;
           @include shadow;
           width: 100%;
+          color: whitesmoke;
+          background-color: $color-secundario;
+          &::placeholder{
+            color: $color-principal;
+            opacity: 0.6;
+          }
+          &:focus{
+           outline-color: $color-principal;
+           border-color: none;
+           box-shadow: none;
+           &::placeholder{
+            opacity: 0;
+           }
+          }
         }
       }
 
       textarea {
         border: 0;
         @include shadow;
+        color: whitesmoke;
         width: 100%;
+        background-color: $color-secundario;
+        &::placeholder{
+          color: $color-principal;
+          opacity: 0.6;
+        }
+        &:focus{
+          outline-color: $color-principal;
+          &::placeholder{
+            opacity: 0;
+           }
+
+        }
       }
     }
 
@@ -95,8 +123,10 @@
       a{
         margin: 10px;
       }
+      
       svg path{
         fill: $color-principal;
+        
       }
       @include shadow;
       background-color: $color-secundario;
