@@ -235,6 +235,10 @@ main {
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
+  background-color: #2A2C34;
+  color: #e7ab30;
+  width: 100%;
+  text-align: center;
 }
 .contact-container .contact__medios {
   margin: 10% 5%;
@@ -297,9 +301,7 @@ main {
   }
   .contact-container .contact__title {
     width: 100%;
-    background-color: #2A2C34;
     text-align: center;
-    color: #e7ab30;
   }
   .contact-container .contact__medios {
     display: flex;
