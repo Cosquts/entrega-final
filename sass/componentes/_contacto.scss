@@ -23,29 +23,34 @@
     &__medios {
       margin: 10% 5%;
       height: 100%;
-      background-color: $color-principal;
-     
+      width: 100%;
+      
       &-div {
+        svg path{
+          fill: $color-secundario;
+        }
         &--3 {
           margin-bottom: 0;
+       
         }
-
+        // flex: calc(100% / 3);
+        background-color: $color-principal;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         margin-bottom: 10%;
         @include shadow;
+        padding: 5px;
 
         p {
           text-align: center;
-          font-size: 15px;
+          font-size: 20px;
+          font-weight: bold;
           margin: 0;
+          color: $color-secundario;
         }
-
-        img {
-          width: 40px;
-        }
+       
       }
 
     }
@@ -84,13 +89,21 @@
 
     &__social {
       h3 {
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
       }
+      a{
+        margin: 10px;
+      }
+      svg path{
+        fill: $color-principal;
+      }
       @include shadow;
+      background-color: $color-secundario;
+      color: whitesmoke;
       width: 100%;
       text-align: center;
-      padding: 5%;
+      padding: 10px;
     }
   }
 }
