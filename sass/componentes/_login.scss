@@ -1,5 +1,5 @@
 @import "../base/variables";
-
+/*ESTILOS DEL LOGIN*/
 .form-container {
   height: 100%;
   display: flex;
@@ -14,11 +14,11 @@
 
     &__tittle {
       color: $color-secundario;
-      text-align: center;
-      font-weight: bold;
+      // text-align: center;
+      font-weight: 1000;
       margin-bottom: 20px;
-      border-radius: 5px;
-      padding: 10px;
+      // border-radius: 5px;
+      // padding: 10px;
     }
     &__date {
       text-align: center;

@@ -1,6 +1,7 @@
 @import "../base/variables";
 @import "../base/extend";
-
+@import "../base/mixin";
+/*MEDIA QUERIES DE SIGNUP*/
 @media (max-width: 420px) {
   .form-sign__date-img {
     display: none;
@@ -9,54 +10,85 @@
 
 @media (min-width: 768px){
   main div.form-sign-container{
-    
-    padding: 2% 10%;
+    padding: 40px 10%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+   
     .form-sign {
-      padding: 5% 5%;
+      padding: 6% 6%;
       width: 100%;
       height: 100%;
       border-radius: 5px 0 0 5px;
-     margin: 0;
+      margin: 0;
     }
      .sign-img {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      border-radius: 0 5px 5px 0;
-      box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
-      background-image: url("../../img/celular.png");
-      background-position: center;
-      background-size: cover;
-      flex-direction: column;
-      justify-content: start;
-      animation: card 1s ease-in;
-      &__login {
+       width: 100%;
+       height: 100%;
+       border-radius: 0 5px 5px 0;
+       box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
+       background-image: url("../../img/celular.png");
+       background-position: center;
+       background-size: cover;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       animation: card 1s ease-in;
+       padding: 20;
+      &__glass{
         display: flex;
+        justify-content: space-around;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 40px;
-        &-text {
-          background-color: rgba(0, 0, 0, 0.4);
-          border-radius: 5px;
-          padding: 5px;
-          margin: 0;
-          color: white;
-        }
-        &-link {
-          @extend .sign-img__login-text;
-          color: green;
-        }
+        background-color: #00000061;
+        border-radius: 5px;
+        backdrop-filter: blur(4px);
+        padding: 10px 30px;
+        height: 70%;
+        width: 70%;
+        box-shadow: 0px 0px 19px 0px rgba(255, 221, 2, 0.2);
+        
+          &-welcome{
+            h2{
+              font-size: 20px;
+              text-transform: uppercase;
+              font-weight: 900;
+              color: $color-claro;
+              margin-bottom: 30px;
+            }
+            p{
+              text-align: start;
+              // max-width: 192.8px;
+              max-width:180px;
+              color: $color-claro;
+              span{
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $color-principal;
+              }
+            }
+          }
+
+          &-login{
+            p{
+              color: $color-claro;
+              margin-bottom: 10px;
+              text-align: center;
+            }
+            a{
+              border-radius: 5px;
+              border: 2px solid $color-principal;
+              text-decoration: none;
+              text-align: center;
+              display: block;
+              color: $color-principal;
+              transition: all 1s ease;
+              &:hover{
+                scale: 1.2;
+                transition: all 0.4s ease;
+              }
+            }
+          }
       }
-      &__h2,
-      &__p {
-        margin: 7% 0;
-        color: whitesmoke;
-        text-align: center;
-      }
+     
     }
   }
 }
@@ -69,8 +101,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     .form-sign {
-      padding: 25% 5%;
-      justify-content: space-between;
       &__date
        {
         &-img {

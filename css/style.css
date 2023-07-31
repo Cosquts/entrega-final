@@ -153,7 +153,7 @@ header {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 6% 6%;
   animation: card 1s ease-in;
   background-color: whitesmoke;
@@ -401,6 +401,7 @@ main {
     grid-column: 1/3;
   }
 }
+/*ESTILOS DEL LOGIN*/
 .form-container, .form-sign-container {
   height: 100%;
   display: flex;
@@ -413,11 +414,8 @@ main {
 }
 .form-container .form__tittle, .form-sign-container .form__tittle, .form-sign-container .form-sign__tittle {
   color: #2A2C34;
-  text-align: center;
-  font-weight: bold;
+  font-weight: 1000;
   margin-bottom: 20px;
-  border-radius: 5px;
-  padding: 10px;
 }
 .form-container .form__date, .form-sign-container .form__date, .form-sign-container .form-sign__date {
   text-align: center;
@@ -553,7 +551,7 @@ main {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 6% 6%;
   animation: card 1s ease-in;
   background-color: whitesmoke;
@@ -576,6 +574,7 @@ main {
     grid-template-columns: 1fr 1fr;
   }
   main div.form-container .form, main div.form-sign-container .form {
+    margin: 0;
     padding: 5% 10%;
     width: 100%;
     height: 100%;
@@ -629,7 +628,7 @@ main {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 6% 6%;
   animation: card 1s ease-in;
   background-color: whitesmoke;
@@ -647,21 +646,35 @@ main {
 .form-sign-container .form-sign__section {
   text-align: center;
 }
+.form-sign-container .form-sign__date {
+  align-items: center;
+}
+.form-sign-container .form-sign__date svg {
+  width: 40px;
+  opacity: 0.8;
+  height: 40px;
+}
 .form-sign-container .form-sign__additional-remember {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .form-sign-container .form-sign__additional-remember-text {
   margin: 0;
+}
+.form-sign-container .form-sign__additional-remember-text:hover {
+  scale: 1.02;
 }
 .form-sign-container .form-sign__login-link {
   color: green;
   font-size: 20px;
   text-decoration: none;
+}
+.form-sign-container .form-sign__login-link:hover {
+  text-decoration: underline;
 }
 .form-sign-container .sign-img {
   display: none;
@@ -685,7 +698,7 @@ main {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 6% 6%;
   animation: card 1s ease-in;
   background-color: whitesmoke;
@@ -696,6 +709,7 @@ main {
   }
 }
 
+/*MEDIA QUERIES DE SIGNUP*/
 @media (max-width: 420px) {
   .form-sign__date-img {
     display: none;
@@ -703,19 +717,18 @@ main {
 }
 @media (min-width: 768px) {
   main div.form-sign-container {
-    padding: 2% 10%;
+    padding: 40px 10%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   main div.form-sign-container .form-sign {
-    padding: 5% 5%;
+    padding: 6% 6%;
     width: 100%;
     height: 100%;
     border-radius: 5px 0 0 5px;
     margin: 0;
   }
   main div.form-sign-container .sign-img {
-    display: flex;
     width: 100%;
     height: 100%;
     border-radius: 0 5px 5px 0;
@@ -723,32 +736,58 @@ main {
     background-image: url("../../img/celular.png");
     background-position: center;
     background-size: cover;
-    flex-direction: column;
-    justify-content: start;
-    animation: card 1s ease-in;
-  }
-  main div.form-sign-container .sign-img__login {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 40px;
+    justify-content: center;
+    animation: card 1s ease-in;
+    padding: 20;
   }
-  main div.form-sign-container .sign-img__login-text, main div.form-sign-container .sign-img__login-link {
-    background-color: rgba(0, 0, 0, 0.4);
+  main div.form-sign-container .sign-img__glass {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3803921569);
     border-radius: 5px;
-    padding: 5px;
-    margin: 0;
-    color: white;
+    backdrop-filter: blur(4px);
+    padding: 10px 30px;
+    height: 70%;
+    width: 70%;
+    box-shadow: 0px 0px 19px 0px rgba(255, 221, 2, 0.2);
   }
-  main div.form-sign-container .sign-img__login-link {
-    color: green;
-  }
-  main div.form-sign-container .sign-img__h2, main div.form-sign-container .sign-img__p {
-    margin: 7% 0;
+  main div.form-sign-container .sign-img__glass-welcome h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
     color: whitesmoke;
+    margin-bottom: 30px;
+  }
+  main div.form-sign-container .sign-img__glass-welcome p {
+    text-align: start;
+    max-width: 180px;
+    color: whitesmoke;
+  }
+  main div.form-sign-container .sign-img__glass-welcome p span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e7ab30;
+  }
+  main div.form-sign-container .sign-img__glass-login p {
+    color: whitesmoke;
+    margin-bottom: 10px;
     text-align: center;
+  }
+  main div.form-sign-container .sign-img__glass-login a {
+    border-radius: 5px;
+    border: 2px solid #e7ab30;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #e7ab30;
+    transition: all 1s ease;
+  }
+  main div.form-sign-container .sign-img__glass-login a:hover {
+    scale: 1.2;
+    transition: all 0.4s ease;
   }
 }
 @media (min-width: 1024px) {
@@ -758,10 +797,6 @@ main {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  main div.form-sign-container .form-sign {
-    padding: 25% 5%;
-    justify-content: space-between;
   }
   main div.form-sign-container .form-sign__date-img {
     width: 40px;
@@ -788,7 +823,7 @@ main {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 6% 6%;
   animation: card 1s ease-in;
   background-color: whitesmoke;
@@ -805,7 +840,7 @@ main {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 6% 6%;
   animation: card 1s ease-in;
   background-color: whitesmoke;
