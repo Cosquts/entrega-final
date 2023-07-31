@@ -4,10 +4,13 @@
 
 .form-sign-container {
   @extend .form-container;
+ 
+  
   .form-sign {
     @extend %card-user;
     background-color: whitesmoke;
     animation: sign-card 1s ease;
+
     &__tittle {
       @extend .form__tittle;
       
@@ -15,12 +18,16 @@
     &__section {
       text-align: center;
     }
+
     &__date {
-      margin: 10px;
+      // margin: 10px;
+      @extend .form__date;
       input {
         @extend .form__date-input;
       }
     }
+
+
     &__additional-remember {
       display: flex;
       width: 100%;

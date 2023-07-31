@@ -1,6 +1,9 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+p {
+    cursor: default;
+}
 @import "componentes/header";
 @import "componentes/menu-desplegable";
 @import  "base/variables";

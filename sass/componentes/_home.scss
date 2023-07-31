@@ -5,9 +5,8 @@
     text-align: center;
     color: black;
     &__welcome{
-        background-color: whitesmoke;
+        background-image: linear-gradient(white,white,$color-principal);
         padding: 10%;
-        // text-shadow: 5px 3px 5px  black;
        &-title{
         color: black;
         margin-bottom: 10%;
@@ -24,7 +23,6 @@
 
     }
     &__images{
-    //    margin: 5%;
        &-img{
         width: 100px;
         margin: 5%;
