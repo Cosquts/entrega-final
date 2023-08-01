@@ -32,7 +32,7 @@
         // @include shadow;
         box-shadow: 6px 0px 5px 1px rgba(0,0,0,0.2);
         // border: 1px solid $color-secundario;
-        border: 0;
+        border: 1px solid rgba(255, 255, 255, 0);
         width: 100%;
         border-radius:0 20px 20px 0;
         height: 40px;
@@ -43,19 +43,17 @@
           font-weight: bold;
         }
         &:focus{
-          border-top:1px  solid $color-principal ;
-          border-right:2px  solid $color-principal ;
-          border-bottom:1px  solid $color-principal ;
+          border-top:1px solid $color-principal ;
+          border-right:1px solid $color-principal ;
+          border-bottom:1px solid $color-principal ;
           font-weight: bold;
-         
-          outline:none ;
+          outline: none;
           &::placeholder{
             opacity: 0;
           }
         }
         &:hover {
-          outline-color: $color-complementario;
-          opacity: 1;
+          
           &::placeholder{
             color: black;
             padding-left: 10px;

@@ -428,7 +428,7 @@ main {
 }
 .form-container .form__date-input, .form-sign-container .form__date-input, .form-sign-container .form-sign__date input {
   box-shadow: 6px 0px 5px 1px rgba(0, 0, 0, 0.2);
-  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0);
   width: 100%;
   border-radius: 0 20px 20px 0;
   height: 40px;
@@ -441,17 +441,13 @@ main {
 }
 .form-container .form__date-input:focus, .form-sign-container .form__date-input:focus, .form-sign-container .form-sign__date input:focus {
   border-top: 1px solid #e7ab30;
-  border-right: 2px solid #e7ab30;
+  border-right: 1px solid #e7ab30;
   border-bottom: 1px solid #e7ab30;
   font-weight: bold;
   outline: none;
 }
 .form-container .form__date-input:focus::placeholder, .form-sign-container .form__date-input:focus::placeholder, .form-sign-container .form-sign__date input:focus::placeholder {
   opacity: 0;
-}
-.form-container .form__date-input:hover, .form-sign-container .form__date-input:hover, .form-sign-container .form-sign__date input:hover {
-  outline-color: #c88c1e;
-  opacity: 1;
 }
 .form-container .form__date-input:hover::placeholder, .form-sign-container .form__date-input:hover::placeholder, .form-sign-container .form-sign__date input:hover::placeholder {
   color: black;
