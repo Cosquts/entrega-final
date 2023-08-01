@@ -585,8 +585,6 @@ main {
     display: none;
   }
   .login-img {
-    padding: 10% 10%;
-    display: flex;
     width: 100%;
     height: 100%;
     border-radius: 0 5px 5px 0;
@@ -594,32 +592,60 @@ main {
     background-image: url("../../img/celular.png");
     background-position: center;
     background-size: cover;
-    flex-direction: column;
-    justify-content: start;
-    animation: card 1s ease-in;
-  }
-  .login-img__login {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 40px;
+    justify-content: center;
+    animation: card 1s ease-in;
+    padding: 20px;
   }
-  .login-img__login-text, .login-img__login-link {
-    background-color: rgba(0, 0, 0, 0.4);
+  .login-img__glass {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3803921569);
     border-radius: 5px;
-    padding: 5px;
-    margin: 0;
-    color: white;
+    backdrop-filter: blur(4px);
+    padding: 10px 30px;
+    height: 70%;
+    max-width: 600px;
+    outline: 1px solid #e7ab30;
   }
-  .login-img__login-link {
-    color: green;
-  }
-  .login-img__h2, .login-img__p {
-    margin: 7% 0;
+  .login-img__glass-welcome h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
     color: whitesmoke;
+    margin-bottom: 30px;
+  }
+  .login-img__glass-welcome p {
+    text-align: start;
+    max-width: 180px;
+    color: whitesmoke;
+  }
+  .login-img__glass-welcome p span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e7ab30;
+  }
+  .login-img__glass-login p {
+    color: whitesmoke;
+    margin-bottom: 10px;
     text-align: center;
+  }
+  .login-img__glass-login a {
+    border-radius: 5px;
+    border: 2px solid #e7ab30;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #e7ab30;
+    transition: all 1s ease;
+  }
+  .login-img__glass-login a:hover {
+    scale: 1.05;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #e7ab30;
   }
 }
 .form-sign-container .form-sign, .form-container .form, .form-sign-container .form {
@@ -740,7 +766,7 @@ main {
     align-items: center;
     justify-content: center;
     animation: card 1s ease-in;
-    padding: 20;
+    padding: 20px;
   }
   main div.form-sign-container .sign-img__glass {
     display: flex;
@@ -751,8 +777,8 @@ main {
     backdrop-filter: blur(4px);
     padding: 10px 30px;
     height: 70%;
-    width: 70%;
-    box-shadow: 0px 0px 19px 0px rgba(255, 221, 2, 0.2);
+    max-width: 600px;
+    outline: 1px solid #e7ab30;
   }
   main div.form-sign-container .sign-img__glass-welcome h2 {
     font-size: 20px;
@@ -786,8 +812,10 @@ main {
     transition: all 1s ease;
   }
   main div.form-sign-container .sign-img__glass-login a:hover {
-    scale: 1.2;
-    transition: all 0.4s ease;
+    scale: 1.05;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #e7ab30;
   }
 }
 @media (min-width: 1024px) {
