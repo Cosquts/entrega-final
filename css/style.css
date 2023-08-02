@@ -265,9 +265,14 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 50%;
+  transition: all 1s ease-out;
 }
 .contact-container .contact__medios h3 {
   color: whitesmoke;
+}
+.contact-container .contact__medios:hover .contact__medios-decoration {
+  scale: 1.5;
+  transition: all 1s ease-out;
 }
 .contact-container .contact__medios-div {
   backdrop-filter: blur(5px);

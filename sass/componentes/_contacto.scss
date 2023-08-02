@@ -39,6 +39,7 @@
         top: -15px;
         right: -15px;
         border-radius: 50%;
+        transition: all 1s ease-out;
       }
       h3{
         color: $color-claro;
@@ -49,6 +50,10 @@
       background-color: $color-secundario ;
       padding: 10px;
       position: relative;
+      &:hover .contact__medios-decoration{
+        scale: 1.5;
+        transition: all 1s ease-out;
+      }
       
       &-div {
         svg path{
