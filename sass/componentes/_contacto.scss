@@ -22,7 +22,7 @@
       color: $color-secundario;
       width: 100%;
       text-align: center;
-      box-shadow: 0px 24px 24px -14px rgba(0, 0, 0, 0.15);
+      @include bottom-shadow;
     }
 
     &__h2 {
@@ -62,8 +62,7 @@
           &:focus {
             outline: none;
             border-bottom: 1px solid $color-principal;
-            box-shadow: 0px 10px 24px -15px rgba(0, 0, 0, 0.62);
-
+            @include bottom-shadow;
             &::placeholder {
               opacity: 0;
               transition: all 1s ease;
@@ -90,8 +89,7 @@
           &:focus {
             outline: none;
             border-bottom: 1px solid $color-principal;
-            box-shadow: 0px 10px 24px -15px rgba(0, 0, 0, 0.62);
-
+            @include bottom-shadow;
             &::placeholder {
               opacity: 0;
             }
