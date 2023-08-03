@@ -3,10 +3,11 @@
 
 @media (min-width:768px){
     .nosotros{
+        padding: 40px;
         display: grid;
         gap: 20px;
         grid-template-columns:1fr 1fr 2fr;
-        grid-template-rows: 50px 100px 520px 50px 100px 100px;
+        grid-template-rows: 50px 100px 520px 50px 120px 120px;
          &__hola{
              grid-column: 1/4;
              margin: 5px;
@@ -22,15 +23,16 @@
           grid-column: 1/3;
           grid-row: 3/4;
             margin:0;
-            width: 350px;
-            height: 350px;
+            width: 400px;
+            height: 400px;
             
             margin:  auto;
             
             border: 1px solid $color-principal;
         }
         h3{
-            padding: 10% 20%;
+            margin: auto 0;
+            padding: 10% 10%;
             grid-column: 3/4;
             grid-row: 3/4;
             
