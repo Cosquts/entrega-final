@@ -187,6 +187,7 @@ main {
   font-size: 20px;
 }
 .home__welcome-title strong {
+  display: block;
   border-bottom: 1px solid #e7ab30;
   font-size: 40px;
   font-weight: 900;
@@ -203,6 +204,7 @@ main {
 }
 .home__images {
   display: flex;
+  justify-content: space-evenly;
   margin-bottom: 20px;
 }
 .home__images-img {
@@ -432,24 +434,61 @@ main {
   margin: 10%;
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
 }
+.nosotros__hola {
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 1px solid #e7ab30;
+}
+.nosotros__name strong {
+  border-bottom: 1px solid #e7ab30;
+  color: black;
+}
 
 @media (min-width: 768px) {
   .nosotros {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.2fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 10% 50% 10% 10% 20%;
+  }
+  .nosotros__hola {
+    grid-column: 1/4;
+    margin: 5px;
+  }
+  .nosotros__name {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    font-size: 30px;
   }
   .nosotros img {
-    grid-column: 1/2;
-    grid-row: 1/7;
-    margin: 0 5% 3% 0;
-    width: 100%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin: 0;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border: 1px solid #e7ab30;
   }
   .nosotros h3 {
-    padding-left: 5%;
+    margin-top: 10%;
+    grid-column: 3/4;
+    grid-row: 3/4;
   }
-  .nosotros h4 {
-    grid-column: 1/3;
+  .nosotros__sub {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    height: 100%;
+  }
+  .nosotros__sub-2 {
+    display: flex;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  .nosotros__sub-3 {
+    display: flex;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 6/7;
   }
 }
 /*ESTILOS DEL LOGIN*/

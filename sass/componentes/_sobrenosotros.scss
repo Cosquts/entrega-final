@@ -10,4 +10,15 @@
         margin: 10%;
         @include shadow;
     }
+    &__hola{
+        margin-bottom: 20px;
+        display: inline-block;
+        border-bottom: 1px solid $color-principal;
+    }
+    &__name{
+        strong{
+            border-bottom: 1px solid $color-principal;
+            color: black;
+        }
+    }
 }
