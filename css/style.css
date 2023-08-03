@@ -447,12 +447,14 @@ main {
 @media (min-width: 768px) {
   .nosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5% 10% 50% 10% 10% 20%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 50px 100px 520px 50px 100px 100px;
   }
   .nosotros__hola {
     grid-column: 1/4;
     margin: 5px;
+    border-bottom: none;
   }
   .nosotros__name {
     grid-column: 1/4;
@@ -469,14 +471,17 @@ main {
     border: 1px solid #e7ab30;
   }
   .nosotros h3 {
-    margin-top: 10%;
+    padding: 10% 20%;
     grid-column: 3/4;
     grid-row: 3/4;
   }
   .nosotros__sub {
     grid-column: 1/4;
     grid-row: 4/5;
-    height: 100%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
   .nosotros__sub-2 {
     display: flex;

@@ -4,11 +4,13 @@
 @media (min-width:768px){
     .nosotros{
         display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 5% 10% 50% 10% 10% 20%;
+        gap: 20px;
+        grid-template-columns:1fr 1fr 2fr;
+        grid-template-rows: 50px 100px 520px 50px 100px 100px;
          &__hola{
              grid-column: 1/4;
              margin: 5px;
+             border-bottom: none;
             }
             &__name{
              grid-column: 1/4;
@@ -28,7 +30,7 @@
             border: 1px solid $color-principal;
         }
         h3{
-            margin-top: 10%;
+            padding: 10% 20%;
             grid-column: 3/4;
             grid-row: 3/4;
             
@@ -36,7 +38,11 @@
         &__sub{
             grid-column: 1/4;
             grid-row: 4/5;
-            height: 100%;
+            display:block;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+           
         }
         &__sub-2{
             display: flex;
