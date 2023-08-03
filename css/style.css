@@ -250,52 +250,6 @@ main {
   font-size: 20px;
   margin-bottom: 20px;
 }
-.contact-container .contact__medios {
-  height: 100%;
-  width: 100%;
-  background-color: #2A2C34;
-  padding: 10px;
-  position: relative;
-}
-.contact-container .contact__medios-decoration {
-  width: 40px;
-  height: 40px;
-  background-color: #e7ab30;
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 50%;
-  transition: all 1s ease-out;
-}
-.contact-container .contact__medios h3 {
-  color: whitesmoke;
-}
-.contact-container .contact__medios:hover .contact__medios-decoration {
-  scale: 1.5;
-  transition: all 1s ease-out;
-}
-.contact-container .contact__medios-div {
-  backdrop-filter: blur(5px);
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10%;
-  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
-  padding: 5px;
-}
-.contact-container .contact__medios-div svg path {
-  fill: #e7ab30;
-}
-.contact-container .contact__medios-div--3 {
-  margin-bottom: 0;
-}
-.contact-container .contact__medios-div p {
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 0;
-  color: #e7ab30;
-}
 .contact-container .contact__form {
   display: flex;
   flex-direction: column;
@@ -359,19 +313,70 @@ main {
   height: 40px;
   background-color: #2A2C34;
   font-weight: bold;
+  border: none;
   border-radius: 5px;
   font-size: 20px;
   transition: all 1s ease;
-  width: 90%;
+  width: 400px;
   display: block;
   margin: 0 auto 40px auto;
 }
 .contact-container .contact__form-label-submit:hover {
-  color: whitesmoke;
-  transition: all 1s ease;
+  color: #2A2C34;
+  background-color: #e7ab30;
+  transition: all 0.5s ease;
   font-size: 21px;
+  outline: 1px solid #2A2C34;
+  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.62);
 }
-.contact-container .contact__form__social {
+.contact-container .contact__info {
+  height: 100%;
+  width: 100%;
+  background-color: #2A2C34;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.contact-container .contact__info:hover .contact__info-decoration {
+  scale: 1.5;
+  transition: all 0.5s ease-out;
+}
+.contact-container .contact__info-decoration {
+  width: 40px;
+  height: 40px;
+  background-color: #e7ab30;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+  transition: all 1s ease-out;
+}
+.contact-container .contact__info h3 {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact-container .contact__info-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10%;
+  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
+  padding: 5px;
+}
+.contact-container .contact__info-div svg path {
+  fill: #e7ab30;
+}
+.contact-container .contact__info-div--3 {
+  margin-bottom: 0;
+}
+.contact-container .contact__info-div p {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 0 10px;
+  color: #e7ab30;
+}
+.contact-container .contact__social {
   box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
   background-color: #2A2C34;
   color: whitesmoke;
@@ -379,14 +384,14 @@ main {
   text-align: center;
   padding: 10px;
 }
-.contact-container .contact__form__social h3 {
+.contact-container .contact__social h3 {
   font-size: 15px;
   text-align: center;
 }
-.contact-container .contact__form__social a {
+.contact-container .contact__social a {
   margin: 10px;
 }
-.contact-container .contact__form__social svg path {
+.contact-container .contact__social svg path {
   fill: #e7ab30;
 }
 
