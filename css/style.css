@@ -317,7 +317,7 @@ main {
   border-radius: 5px;
   font-size: 20px;
   transition: all 1s ease;
-  width: 400px;
+  width: 80%;
   display: block;
   margin: 0 auto 40px auto;
 }
@@ -325,9 +325,8 @@ main {
   color: #2A2C34;
   background-color: #e7ab30;
   transition: all 0.5s ease;
-  font-size: 21px;
   outline: 1px solid #2A2C34;
-  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
 }
 .contact-container .contact__info {
   height: 100%;
@@ -337,7 +336,17 @@ main {
   position: relative;
   margin-bottom: 100px;
 }
-.contact-container .contact__info:hover .contact__info-decoration {
+.contact-container .contact__info-pin {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  right: 0px;
+  fill: #e7ab30;
+  rotate: 30deg;
+  transition: all 0.5s ease-out;
+}
+.contact-container .contact__info:hover .contact__info-pin {
   scale: 1.5;
   transition: all 0.5s ease-out;
 }
