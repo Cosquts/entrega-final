@@ -5,7 +5,7 @@
     text-align: center;
     color: black;
     &__welcome{
-        background-image: linear-gradient(white,white,$color-principal);
+        background-image: linear-gradient(white,$color-principal);
         padding: 10%;
        &-title{
         color: black;

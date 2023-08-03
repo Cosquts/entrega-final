@@ -21,11 +21,12 @@
   }
   &__social {
     text-align: center;
-    &-icons {
-      img {
-        margin: 20px;
+    margin-bottom: 10px;
+      a {
+        margin: 15px;
+       
       }
-    }
+    
   }
   p {
     margin: 0;

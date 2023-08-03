@@ -178,7 +178,7 @@ main {
   color: black;
 }
 .home__welcome {
-  background-image: linear-gradient(white, white, #e7ab30);
+  background-image: linear-gradient(white, #e7ab30);
   padding: 10%;
 }
 .home__welcome-title {
@@ -319,9 +319,16 @@ main {
   transition: all 1s ease;
   width: 80%;
   display: block;
-  margin: 0 auto 40px auto;
+  margin: 0 auto;
 }
 .contact-container .contact__form-label-submit:hover {
+  color: #2A2C34;
+  background-color: #e7ab30;
+  transition: all 0.5s ease;
+  outline: 1px solid #2A2C34;
+  box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
+}
+.contact-container .contact__form-label-submit:active {
   color: #2A2C34;
   background-color: #e7ab30;
   transition: all 0.5s ease;
@@ -350,16 +357,6 @@ main {
   scale: 1.5;
   transition: all 0.5s ease-out;
 }
-.contact-container .contact__info-decoration {
-  width: 40px;
-  height: 40px;
-  background-color: #e7ab30;
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 50%;
-  transition: all 1s ease-out;
-}
 .contact-container .contact__info h3 {
   color: whitesmoke;
   font-size: 30px;
@@ -384,24 +381,6 @@ main {
   font-size: 18px;
   margin: 0 0 0 10px;
   color: #e7ab30;
-}
-.contact-container .contact__social {
-  box-shadow: 0px 0px 14px 2px rgba(42, 44, 52, 0.35);
-  background-color: #2A2C34;
-  color: whitesmoke;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-.contact-container .contact__social h3 {
-  font-size: 15px;
-  text-align: center;
-}
-.contact-container .contact__social a {
-  margin: 10px;
-}
-.contact-container .contact__social svg path {
-  fill: #e7ab30;
 }
 
 @media (min-width: 768px) {
@@ -956,9 +935,10 @@ main {
 }
 .footer-container__social {
   text-align: center;
+  margin-bottom: 10px;
 }
-.footer-container__social-icons img {
-  margin: 20px;
+.footer-container__social a {
+  margin: 15px;
 }
 .footer-container p {
   margin: 0;

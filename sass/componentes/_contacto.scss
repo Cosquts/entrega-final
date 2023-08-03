@@ -37,6 +37,7 @@
       gap: 10px;
       margin: 10%;
       width: 100%;
+      
 
       &-label {
         display: flex;
@@ -109,9 +110,18 @@
           transition: all 1s ease;
           width: 80%;
           display: block;
-          margin: 0 auto 40px auto;
+          margin: 0 auto;
 
           &:hover {
+            color: $color-secundario;
+            background-color: $color-principal;
+            transition: all 0.5s ease;
+            // font-size: 21px;
+            outline: 1px solid $color-secundario;
+            box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
+          }
+
+          &:active{
             color: $color-secundario;
             background-color: $color-principal;
             transition: all 0.5s ease;
@@ -150,17 +160,6 @@
         
       }
 
-      &-decoration {
-        width: 40px;
-        height: 40px;
-        background-color: $color-principal;
-        position: absolute;
-        top: -15px;
-        right: -15px;
-        border-radius: 50%;
-        transition: all 1s ease-out;
-      }
-
       h3 {
         color: $color-claro;
         font-size: 30px;
@@ -181,42 +180,17 @@
 
          &--3 {
             margin-bottom: 0;
-
         }
 
 
         p {
           text-align: center;
           font-size: 18px;
-          // font-weight: bold;
           margin: 0 0 0 10px;
           color: $color-principal;
         }
 
       }
-    }
-
-    &__social {
-      h3 {
-        font-size: 15px;
-        text-align: center;
-      }
-
-      a {
-        margin: 10px;
-      }
-
-      svg path {
-        fill: $color-principal;
-
-      }
-
-      @include shadow;
-      background-color: $color-secundario;
-      color: whitesmoke;
-      width: 100%;
-      text-align: center;
-      padding: 10px;
     }
   }
 }
