@@ -11,8 +11,8 @@
     background-color: whitesmoke;
     animation: sign-card 1s ease;
 
-    &__tittle {
-      @extend .form__tittle;
+    &__title {
+      @extend .form__title;
       
     }
     &__section {

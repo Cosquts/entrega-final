@@ -12,7 +12,7 @@
     background-color: whitesmoke;
    
 
-    &__tittle {
+    &__title {
       color: $color-secundario;
       // text-align: center;
       font-weight: 1000;
@@ -52,14 +52,6 @@
             opacity: 0;
           }
         }
-        &:hover {
-          
-          &::placeholder{
-            color: black;
-            padding-left: 10px;
-            transition: all 1s ease;
-          }
-        }
       }
   
       svg path{
@@ -77,10 +69,9 @@
 
       &-text {
         margin: 0;
+        font-size: 18px;
         cursor: default;
-        &:hover{
-          scale: 1.02;
-        }
+       
       }
       &-check{
         cursor: pointer;
@@ -90,14 +81,12 @@
     &__additional-link {
       color: rgba(255, 0, 0, 1);
       text-align: center;
-      display: block;
+      display: inline-block;
       width: 100%;
       text-decoration: none;
       font-size: 15px;
       margin-bottom: 20px;
-      &:hover{
-        scale: 1.02;
-      }
+     
     }
     &__submit {
       border: none;
@@ -108,11 +97,7 @@
       border-radius: 5px;
       height: 50px;
       transition: all 0.5s ease;
-      &:hover{
-        background-color: $color-secundario;
-        color: $color-principal;
-        transition: all 0.5s ease;
-      }
+     
     }
     &__social {
       display: flex;
@@ -123,22 +108,7 @@
         margin: 10px;
        svg{
          transition: all 1s ease;
-         &:hover{
-          scale: 1.5;
-          transition: all 1s ease;
-        }
-       
-         &.facebook {
-          &:hover path{
-            fill: #1F7BF2;
-          }
-         }
-
-         &.google{
-          &:hover path{
-            fill: #EB483B;
-          }
-         }
+         
        
        }
       }
@@ -154,9 +124,7 @@
         color: red;
         font-size: 20px;
         text-decoration: none;
-        &:hover{
-          text-decoration: underline;
-        }
+       
       }
     }
   }
