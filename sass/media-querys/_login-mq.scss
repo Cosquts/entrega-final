@@ -64,7 +64,7 @@
 
         p {
           text-align: start;
-          max-width: 180px;
+          // max-width: 180px;
           color: $color-claro;
 
           span {
@@ -75,23 +75,34 @@
         }
       }
 
-      &-login {
+      &-signup {
         p {
           color: $color-claro;
           margin-bottom: 10px;
           text-align: center;
         }
-
-        a {
-          border-radius: 5px;
-          border: 2px solid $color-principal;
+        a{
           text-decoration: none;
-          text-align: center;
           display: block;
+          text-align: center;
+          
+          button{
+          border-radius: 5px;
+          background-color: transparent;
+          border: 2px solid $color-principal;
           color: $color-principal;
           transition: all 1s ease;
-
-
+          width: 90%;
+          height: 40px;
+          &:hover{
+            scale: 1.05;
+            transition: all 0.3s ease;
+            color: white;
+            background-color: $color-principal;
+            
+          }
+          }
+         
         }
       }
 
@@ -160,11 +171,30 @@
     }
 
     .login-img__glass {
+      padding: 5px 15px;
       height: 80%;
       width: 70%;
+      &-welcome{
+        h2{
+          font-size: 22px;
+        }
+        p{
+          font-size: 15px;
+         margin: 0;
+          span{
+            font-size: 20px;
+            margin: 0;
+          }
+        }
 
-      &-login {
+      }
+      &-signup {
         a {
+          
+          button{
+            width:90%;
+            height: 40px;
+          }
           &:hover {
             scale: 1.05;
             transition: all 0.3s ease;

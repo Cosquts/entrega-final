@@ -667,7 +667,6 @@ main {
   }
   .login-img__glass-welcome p {
     text-align: start;
-    max-width: 180px;
     color: whitesmoke;
   }
   .login-img__glass-welcome p span {
@@ -675,19 +674,30 @@ main {
     text-transform: uppercase;
     color: #e7ab30;
   }
-  .login-img__glass-login p {
+  .login-img__glass-signup p {
     color: whitesmoke;
     margin-bottom: 10px;
     text-align: center;
   }
-  .login-img__glass-login a {
-    border-radius: 5px;
-    border: 2px solid #e7ab30;
+  .login-img__glass-signup a {
     text-decoration: none;
-    text-align: center;
     display: block;
+    text-align: center;
+  }
+  .login-img__glass-signup a button {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #e7ab30;
     color: #e7ab30;
     transition: all 1s ease;
+    width: 90%;
+    height: 40px;
+  }
+  .login-img__glass-signup a button:hover {
+    scale: 1.05;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #e7ab30;
   }
 }
 @media (min-width: 1024px) {
@@ -725,10 +735,26 @@ main {
     fill: #EB483B;
   }
   main div.form-container .login-img__glass, main div.form-sign-container .login-img__glass {
+    padding: 5px 15px;
     height: 80%;
     width: 70%;
   }
-  main div.form-container .login-img__glass-login a:hover, main div.form-sign-container .login-img__glass-login a:hover {
+  main div.form-container .login-img__glass-welcome h2, main div.form-sign-container .login-img__glass-welcome h2 {
+    font-size: 22px;
+  }
+  main div.form-container .login-img__glass-welcome p, main div.form-sign-container .login-img__glass-welcome p {
+    font-size: 15px;
+    margin: 0;
+  }
+  main div.form-container .login-img__glass-welcome p span, main div.form-sign-container .login-img__glass-welcome p span {
+    font-size: 20px;
+    margin: 0;
+  }
+  main div.form-container .login-img__glass-signup a button, main div.form-sign-container .login-img__glass-signup a button {
+    width: 90%;
+    height: 40px;
+  }
+  main div.form-container .login-img__glass-signup a:hover, main div.form-sign-container .login-img__glass-signup a:hover {
     scale: 1.05;
     transition: all 0.3s ease;
     color: white;
@@ -787,7 +813,7 @@ main {
     outline: 1px solid #e7ab30;
   }
   main div.form-sign-container .sign-img__glass-welcome h2 {
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 900;
     color: whitesmoke;
@@ -819,7 +845,7 @@ main {
     border: 2px solid #e7ab30;
     color: #e7ab30;
     transition: all 1s ease;
-    width: 300px;
+    width: 90%;
     height: 40px;
   }
   main div.form-sign-container .sign-img__glass-login a button:hover {
@@ -856,11 +882,12 @@ main {
     display: none;
   }
   main div.form-sign-container .sign-img__glass {
+    padding: 5px 15px;
     height: 80%;
     width: 70%;
   }
   main div.form-sign-container .sign-img__glass h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
   main div.form-sign-container .sign-img__glass-welcome p {
     font-size: 20px;
@@ -870,10 +897,6 @@ main {
   }
   main div.form-sign-container .sign-img__glass-welcome-login p {
     font-size: 20px;
-  }
-  main div.form-sign-container .sign-img__glass-welcome-login a {
-    color: red;
-    display: inline-block;
   }
 }
 /* MEDIA QUERIES DE CONTACTO*/
