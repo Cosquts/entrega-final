@@ -7,7 +7,7 @@
  
   
   .form-sign {
-    @extend %card-user;
+    @extend .form;
     background-color: whitesmoke;
     animation: sign-card 1s ease;
 

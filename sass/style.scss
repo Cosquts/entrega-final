@@ -4,20 +4,37 @@
 p {
     cursor: default;
 }
-@import "componentes/header";
-@import "componentes/menu-desplegable";
-@import  "base/variables";
-@import  "componentes/main";
-@import "componentes/home";
-@import "media-querys/home-mq";
-@import "componentes/contacto";
-@import "media-querys/contacto-mq";
-@import "componentes/sobrenosotros";
-@import "media-querys/sobrenosotros-mq";
-@import "componentes/login";
-@import "media-querys/login-mq";
-@import "componentes/sign";
-@import "media-querys/sign-mq";
-@import "base/extend";
-@import "componentes/footer";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "base/extend";
+@import  "base/variables";
+
+/* Estilos de HEADER*/
+@import "componentes/header";
+/* Estilos de MENU DESPLEGABLE*/
+@import "componentes/menu-desplegable";
+/* Estilos de MAIN*/
+@import  "componentes/main";
+/* Estilos de HOME*/
+@import "componentes/home";
+/* Estilos de CONTACTO*/
+@import "componentes/contacto";
+/* Estilos de SOBRENOSOTROS*/
+@import "componentes/sobrenosotros";
+/* Estilos de LOGIN*/
+@import "componentes/login";
+/* Estilos de SIGN*/
+@import "componentes/sign";
+/* Estilos de FOOTER*/
+@import "componentes/footer";
+
+  /*                       MEDIA QUERIES SEPARADOS POR CADA COMPONENTE                       */
+/* MEDIA QUERIES DE HOME*/
+@import "media-querys/home-mq";
+/* MEDIA QUERIES DE LOGIN*/
+@import "media-querys/login-mq";
+/* MEDIA QUERIES DE SIGN*/
+@import "media-querys/sign-mq";
+/* MEDIA QUERIES DE CONTACTO*/
+@import "media-querys/contacto-mq";
+/* MEDIA QUERIES DE SOBRENOSOTROS*/
+@import "media-querys/sobrenosotros-mq";
