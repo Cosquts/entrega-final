@@ -91,7 +91,7 @@
           color: $color-principal;
           transition: all 1s ease;
 
-         
+
         }
       }
 
@@ -102,71 +102,82 @@
 
 }
 
-@media (min-width:1024px){
-.form{
-  gap: 20px;
-  &__date-input{
-    &:hover {
+@media (min-width:1024px) {
+  main div.form-container{
+    padding: 50px 20% ;
+    height: 70%;
+    .form {
+      gap: 20px;
+      &__date-input {
+        &:hover {
 
-      &::placeholder {
-        color: black;
-        padding-left: 10px;
-        transition: all 1s ease;
+          &::placeholder  {
+            color: black;
+            padding-left: 10px;
+            transition: all 1s ease;
+          }
+        }
+      }
+
+      &__additional-link {
+        &:hover {
+          scale: 1.02;
+        }
+      }
+
+      &__additional-remember-text {
+        &:hover {
+          scale: 1.02;
+        }
+      }
+
+      &__submit {
+        &:hover {
+          background-color: $color-secundario;
+          color: $color-principal;
+          transition: all 0.5s ease;
+        }
+      }
+
+      &__social-icon svg {
+        &:hover {
+          scale: 1.5;
+          transition: all 1s ease;
+        }
+
+        &.facebook {
+          &:hover path {
+            fill: #1F7BF2;
+          }
+        }
+
+        &.google {
+          &:hover path {
+            fill: #EB483B;
+          }
+        }
       }
     }
-  }
-  &__additional-link{
-    &:hover{
-      scale: 1.02;
-    }
-  }
-  &__additional-remember-text{
-    &:hover{
-      scale: 1.02;
-    }
-  }
 
-  &__submit{
-    &:hover{
-      background-color: $color-secundario;
-      color: $color-principal;
-      transition: all 0.5s ease;
-    }
-  }
+    .login-img__glass {
+      height: 80%;
+      width: 70%;
 
-  &__social-icon svg{
-    &:hover{
-      scale: 1.5;
-      transition: all 1s ease;
-    }
-   
-     &.facebook {
-      &:hover path{
-        fill: #1F7BF2;
+      &-login {
+        a {
+          &:hover {
+            scale: 1.05;
+            transition: all 0.3s ease;
+            color: white;
+            background-color: $color-principal;
+          }
+        }
       }
-     }
 
-     &.google{
-      &:hover path{
-        fill: #EB483B;
-      }
-     }
-  }
-}
-.login-img__glass  {
-  height: 80%;
-  width: 70%;
- &-login{
-   a{
-    &:hover {
-      scale: 1.05;
-      transition: all 0.3s ease;
-      color: white;
-      background-color: $color-principal;
+
     }
-  }
- }
- 
+
 
   }
+
 }

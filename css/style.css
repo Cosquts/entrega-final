@@ -152,11 +152,6 @@ header {
 main {
   background-image: linear-gradient(whitesmoke, #2A2C34);
 }
-@media (max-width: 420px) {
-  main {
-    height: auto;
-  }
-}
 
 /* Estilos de HOME*/
 .home {
@@ -696,40 +691,44 @@ main {
   }
 }
 @media (min-width: 1024px) {
-  .form, .form-sign-container .form-sign {
+  main div.form-container, main div.form-sign-container {
+    padding: 50px 20%;
+    height: 70%;
+  }
+  main div.form-container .form, main div.form-sign-container .form, main div.form-container .form-sign-container .form-sign, .form-sign-container main div.form-container .form-sign, main div.form-sign-container .form-sign {
     gap: 20px;
   }
-  .form__date-input:hover::placeholder, .form-sign-container .form-sign__date input:hover::placeholder {
+  main div.form-container .form__date-input:hover::placeholder, main div.form-sign-container .form__date-input:hover::placeholder, main div.form-container .form-sign-container .form-sign__date input:hover::placeholder, .form-sign-container .form-sign__date main div.form-container input:hover::placeholder, main div.form-sign-container .form-sign__date input:hover::placeholder {
     color: black;
     padding-left: 10px;
     transition: all 1s ease;
   }
-  .form__additional-link:hover {
+  main div.form-container .form__additional-link:hover, main div.form-sign-container .form__additional-link:hover {
     scale: 1.02;
   }
-  .form__additional-remember-text:hover {
+  main div.form-container .form__additional-remember-text:hover, main div.form-sign-container .form__additional-remember-text:hover {
     scale: 1.02;
   }
-  .form__submit:hover, .form-sign-container .form-sign__submit:hover {
+  main div.form-container .form__submit:hover, main div.form-sign-container .form__submit:hover, main div.form-container .form-sign-container .form-sign__submit:hover, .form-sign-container main div.form-container .form-sign__submit:hover, main div.form-sign-container .form-sign__submit:hover {
     background-color: #2A2C34;
     color: #e7ab30;
     transition: all 0.5s ease;
   }
-  .form__social-icon svg:hover {
+  main div.form-container .form__social-icon svg:hover, main div.form-sign-container .form__social-icon svg:hover {
     scale: 1.5;
     transition: all 1s ease;
   }
-  .form__social-icon svg.facebook:hover path {
+  main div.form-container .form__social-icon svg.facebook:hover path, main div.form-sign-container .form__social-icon svg.facebook:hover path {
     fill: #1F7BF2;
   }
-  .form__social-icon svg.google:hover path {
+  main div.form-container .form__social-icon svg.google:hover path, main div.form-sign-container .form__social-icon svg.google:hover path {
     fill: #EB483B;
   }
-  .login-img__glass {
+  main div.form-container .login-img__glass, main div.form-sign-container .login-img__glass {
     height: 80%;
     width: 70%;
   }
-  .login-img__glass-login a:hover {
+  main div.form-container .login-img__glass-login a:hover, main div.form-sign-container .login-img__glass-login a:hover {
     scale: 1.05;
     transition: all 0.3s ease;
     color: white;
