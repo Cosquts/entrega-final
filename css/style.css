@@ -519,16 +519,10 @@ main {
 .form-sign-container .form-sign__additional-remember-text {
   margin: 0;
 }
-.form-sign-container .form-sign__additional-remember-text:hover {
-  scale: 1.02;
-}
 .form-sign-container .form-sign__login-link {
   color: green;
   font-size: 20px;
   text-decoration: none;
-}
-.form-sign-container .form-sign__login-link:hover {
-  text-decoration: underline;
 }
 .form-sign-container .sign-img {
   display: none;
@@ -587,8 +581,9 @@ main {
     width: 200px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1024px) {
   .home .home__welcome {
+    padding: 50px 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/2;
@@ -848,12 +843,6 @@ main {
     width: 90%;
     height: 40px;
   }
-  main div.form-sign-container .sign-img__glass-login a button:hover {
-    scale: 1.05;
-    transition: all 0.3s ease;
-    color: white;
-    background-color: #e7ab30;
-  }
 }
 @media (min-width: 1024px) {
   main div.form-sign-container {
@@ -874,6 +863,12 @@ main {
   }
   main div.form-sign-container .form-sign__additional-remember-check {
     scale: 2;
+  }
+  main div.form-sign-container .form-sign__additional-remember-text {
+    margin: 0;
+  }
+  main div.form-sign-container .form-sign__additional-remember-text:hover {
+    scale: 1.02;
   }
   main div.form-sign-container .form-sign hr {
     display: none;
@@ -897,6 +892,12 @@ main {
   }
   main div.form-sign-container .sign-img__glass-welcome-login p {
     font-size: 20px;
+  }
+  main div.form-sign-container .sign-img__glass-welcome-login a button:hover {
+    scale: 1.05;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #e7ab30;
   }
 }
 /* MEDIA QUERIES DE CONTACTO*/

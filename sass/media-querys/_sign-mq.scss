@@ -94,13 +94,7 @@
               transition: all 1s ease;
               width: 90%;
               height: 40px;
-              &:hover{
-                scale: 1.05;
-                transition: all 0.3s ease;
-                color: white;
-                background-color: $color-principal;
-                
-              }
+             
               }
              
             }
@@ -133,6 +127,14 @@
         &-check {
           scale: 2;
         }
+       
+          &-text {
+            margin: 0;
+            &:hover{
+              scale: 1.02;
+            }
+          }
+        
       }
 
       hr {
@@ -140,6 +142,7 @@
       }
       &__login {
         display: none;
+
       }
     }
     .sign-img{
@@ -161,6 +164,21 @@
           &-login{
             p{
               font-size: 20px;
+            }
+            a{
+             
+              
+              button{
+             
+              &:hover{
+                scale: 1.05;
+                transition: all 0.3s ease;
+                color: white;
+                background-color: $color-principal;
+                
+              }
+              }
+             
             }
            
           }

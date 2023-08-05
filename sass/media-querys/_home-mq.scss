@@ -13,9 +13,10 @@
         }
     }
 }
-    @media (min-width:1300px) {
+    @media (min-width:1024px) {
         .home{
             .home__welcome{
+                padding: 50px 15%;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
   
