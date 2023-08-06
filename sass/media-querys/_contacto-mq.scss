@@ -35,3 +35,28 @@
         }
     }
 }
+
+@media (min-width:1300px) {
+    .contact-container{
+        height: 95vh;
+        .contact{
+            flex-direction: row;
+            justify-content: space-around;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+            &__form{
+                width: 60%;
+                height: 90%;
+                justify-content: space-around;
+            }
+            
+            &__info{
+                width: 30%;
+                height: 50%;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

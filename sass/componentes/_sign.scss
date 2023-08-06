@@ -9,7 +9,7 @@
   .form-sign {
     @extend .form;
     background-color: whitesmoke;
-    animation: sign-card 1s ease;
+    // animation: card 1s ease-in;
 
     &__title {
       @extend .form__title;
@@ -66,17 +66,4 @@
   }
 }
 
-@keyframes card {
-  0% {
-    opacity: 0%;
-    scale: 0;
-  }
 
-  50% {
-    opacity: 50%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}

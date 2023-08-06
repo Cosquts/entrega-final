@@ -7,6 +7,18 @@ p {
   cursor: default;
 }
 
+@keyframes card {
+  0% {
+    opacity: 0%;
+    scale: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 /* Estilos de HEADER*/
 header {
   height: 76.78px;
@@ -495,7 +507,6 @@ main {
 /* Estilos de SIGN*/
 .form-sign-container .form-sign {
   background-color: whitesmoke;
-  animation: sign-card 1s ease;
 }
 .form-sign-container .form-sign__section {
   text-align: center;
@@ -528,18 +539,6 @@ main {
   display: none;
 }
 
-@keyframes card {
-  0% {
-    opacity: 0%;
-    scale: 0;
-  }
-  50% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 /* Estilos de FOOTER*/
 .footer-container {
   background-color: #e7ab30;
@@ -937,6 +936,29 @@ main {
   }
   .contact-container .contact__form-label input {
     height: 50px;
+  }
+}
+@media (min-width: 1300px) {
+  .contact-container {
+    height: 95vh;
+  }
+  .contact-container .contact {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .contact-container .contact__form {
+    width: 60%;
+    height: 90%;
+    justify-content: space-around;
+  }
+  .contact-container .contact__info {
+    width: 30%;
+    height: 50%;
+    margin-bottom: 0;
   }
 }
 /* MEDIA QUERIES DE SOBRENOSOTROS*/
