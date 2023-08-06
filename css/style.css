@@ -574,8 +574,13 @@ main {
 /*                       MEDIA QUERIES SEPARADOS POR CADA COMPONENTE                       */
 /* MEDIA QUERIES DE HOME*/
 @media (min-width: 768px) {
+  .home {
+    height: 95vh;
+  }
   .home__welcome {
     padding: 3%;
+    height: 100%;
+    padding: 50px 15%;
   }
   .home__images-img {
     width: 200px;
@@ -583,18 +588,24 @@ main {
 }
 @media (min-width: 1024px) {
   .home .home__welcome {
-    padding: 50px 15%;
+    padding: 100px 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/2;
+  }
+  .home .home__welcome-h2 {
+    font-size: 40px;
+  }
+  .home .home__welcome-h3 {
+    font-size: 25px;
   }
   .home .home__welcome .home__images {
     grid-column: 2/3;
     grid-row: 1/5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
+    height: 100%;
   }
   .home .home__welcome .home__images-img {
     width: 300px;
@@ -688,12 +699,6 @@ main {
     width: 90%;
     height: 40px;
   }
-  .login-img__glass-signup a button:hover {
-    scale: 1.05;
-    transition: all 0.3s ease;
-    color: white;
-    background-color: #e7ab30;
-  }
 }
 @media (min-width: 1024px) {
   main div.form-container, main div.form-sign-container {
@@ -749,7 +754,7 @@ main {
     width: 90%;
     height: 40px;
   }
-  main div.form-container .login-img__glass-signup a:hover, main div.form-sign-container .login-img__glass-signup a:hover {
+  main div.form-container .login-img__glass-signup a button:hover, main div.form-sign-container .login-img__glass-signup a button:hover {
     scale: 1.05;
     transition: all 0.3s ease;
     color: white;
@@ -890,10 +895,14 @@ main {
   main div.form-sign-container .sign-img__glass-welcome p span {
     font-size: 25px;
   }
-  main div.form-sign-container .sign-img__glass-welcome-login p {
+  main div.form-sign-container .sign-img__glass-login p {
     font-size: 20px;
   }
-  main div.form-sign-container .sign-img__glass-welcome-login a button:hover {
+  main div.form-sign-container .sign-img__glass-login-link button {
+    width: 10%;
+    height: 40px;
+  }
+  main div.form-sign-container .sign-img__glass-login-link button:hover {
     scale: 1.05;
     transition: all 0.3s ease;
     color: white;

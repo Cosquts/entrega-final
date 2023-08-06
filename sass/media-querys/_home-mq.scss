@@ -3,32 +3,39 @@
 
 @media (min-width:768px){
     .home{
-    //    padding: 5%;
+        height: 95vh;
+    
         &__welcome{
-           padding: 3%;
-           
+            padding: 3%;
+            height: 100%;
+            padding: 50px 15%;
+            
         }
         &__images-img{
             width: 200px;
         }
     }
 }
-    @media (min-width:1024px) {
-        .home{
-            .home__welcome{
-                padding: 50px 15%;
+@media (min-width:1024px) {
+    .home{
+        .home__welcome{
+                padding: 100px 15%;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-  
                 grid-column: 1/2 ;
+                &-h2{
+                    font-size: 40px;
+                }
+                &-h3{
+                    font-size: 25px;
+                }
                 .home__images{
-                   
                     grid-column: 2/3 ;
                     grid-row: 1/5;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    align-items: end;
+                    height: 100%;
                    &-img{
                     width: 300px;
                    }

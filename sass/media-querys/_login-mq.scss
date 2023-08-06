@@ -22,7 +22,7 @@
       height: 100%;
       border-radius: 5px 0 0 5px;
       justify-content: space-around;
-
+      
       &__signup {
         display: none;
       }
@@ -94,13 +94,7 @@
           transition: all 1s ease;
           width: 90%;
           height: 40px;
-          &:hover{
-            scale: 1.05;
-            transition: all 0.3s ease;
-            color: white;
-            background-color: $color-principal;
-            
-          }
+         
           }
          
         }
@@ -194,12 +188,12 @@
           button{
             width:90%;
             height: 40px;
-          }
-          &:hover {
-            scale: 1.05;
-            transition: all 0.3s ease;
-            color: white;
-            background-color: $color-principal;
+            &:hover {
+              scale: 1.05;
+              transition: all 0.3s ease;
+              color: white;
+              background-color: $color-principal;
+            }
           }
         }
       }
