@@ -1,3 +1,7 @@
-# Desafio n'3
-GitHub Pages: https://cosquts.github.io/tercer-desafio/
-000Webhos: https://sebastian-apodaca.000webhostapp.com/
+DESAFIO FINAL DE CODERHOUSE (DESARROLLO WEB)
+
+En esta entrega final:
+#sass (mixin, extend, variables, nesting)
+#bootstrap(header con menu desplegable)
+#todos los html responsive
+#seo meta description y keywords
