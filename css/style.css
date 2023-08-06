@@ -300,13 +300,6 @@ main {
   display: block;
   margin: 0 auto;
 }
-.contact-container .contact__form-label-submit:hover {
-  color: #2A2C34;
-  background-color: #e7ab30;
-  transition: all 0.5s ease;
-  outline: 1px solid #2A2C34;
-  box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
-}
 .contact-container .contact__form-label-submit:active {
   color: #2A2C34;
   background-color: #e7ab30;
@@ -330,10 +323,6 @@ main {
   right: 0px;
   fill: #e7ab30;
   rotate: 30deg;
-  transition: all 0.5s ease-out;
-}
-.contact-container .contact__info:hover .contact__info-pin {
-  scale: 1.5;
   transition: all 0.5s ease-out;
 }
 .contact-container .contact__info h3 {
@@ -555,7 +544,11 @@ main {
   padding: 0;
 }
 .footer-container__footer-section-links a {
+  color: darkmagenta;
   text-decoration: none;
+}
+.footer-container__footer-section-links a:hover {
+  color: #2A2C34;
 }
 .footer-container__social {
   text-align: center;
@@ -955,10 +948,21 @@ main {
     height: 90%;
     justify-content: space-around;
   }
+  .contact-container .contact__form-label-submit:hover {
+    color: #2A2C34;
+    background-color: #e7ab30;
+    transition: all 0.5s ease;
+    outline: 1px solid #2A2C34;
+    box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
+  }
   .contact-container .contact__info {
     width: 30%;
-    height: 50%;
+    height: 40%;
     margin-bottom: 0;
+  }
+  .contact-container .contact__info:hover .contact__info-pin {
+    scale: 1.5;
+    transition: all 0.5s ease-out;
   }
 }
 /* MEDIA QUERIES DE SOBRENOSOTROS*/
@@ -1014,6 +1018,11 @@ main {
     align-items: center;
     grid-column: 1/4;
     grid-row: 6/7;
+  }
+}
+@media (min-width: 1300px) {
+  .nosotros {
+    padding: 50px 20%;
   }
 }
 

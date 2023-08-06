@@ -15,7 +15,11 @@
       list-style: none;
       padding: 0;
       a {
+        color: darkmagenta;
         text-decoration: none;
+        &:hover{
+          color: $color-secundario;
+        }
       }
     }
   }

@@ -110,14 +110,7 @@
           display: block;
           margin: 0 auto;
 
-          &:hover {
-            color: $color-secundario;
-            background-color: $color-principal;
-            transition: all 0.5s ease;
-            // font-size: 21px;
-            outline: 1px solid $color-secundario;
-            box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
-          }
+   
 
           &:active{
             color: $color-secundario;
@@ -152,12 +145,7 @@
       transition: all 0.5s ease-out;
     }
 
-      &:hover .contact__info-pin {
-        scale: 1.5;
-        transition: all 0.5s ease-out;
-        
-      }
-
+     
       h3 {
         color: $color-claro;
         font-size: 30px;
@@ -190,5 +178,7 @@
 
       }
     }
+
   }
+ 
 }

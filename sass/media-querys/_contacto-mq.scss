@@ -1,34 +1,39 @@
 @import "../base/mixin";
 @import "../base/variables";
 
-@media (min-width:768px){
-    
-   .contact-container .contact{
+@media (min-width:768px) {
+
+    .contact-container .contact {
         padding: 4% 2%;
-        &__title{
+
+        &__title {
             width: 100%;
             text-align: center;
-            
+
         }
-        &__medios{
+
+        &__medios {
             display: flex;
             width: 100%;
             margin: 40px;
             @include shadow;
-            &-div{
+
+            &-div {
                 margin: 0;
                 box-shadow: none;
             }
-            &-h2{
+
+            &-h2 {
                 font-size: 25px;
             }
         }
-        &__form{
+
+        &__form {
             padding: 40px;
             margin: 0;
-           
-            &-label{
-                input{
+
+            &-label {
+                input {
                     height: 50px;
                 }
             }
@@ -37,25 +42,49 @@
 }
 
 @media (min-width:1300px) {
-    .contact-container{
+    .contact-container {
         height: 95vh;
-        .contact{
+
+        .contact {
             flex-direction: row;
             justify-content: space-around;
             width: 80%;
             height: 100%;
             margin: 0 auto;
             padding: 0;
-            &__form{
+
+            &__form {
                 width: 60%;
                 height: 90%;
                 justify-content: space-around;
+
+                &-label {
+                    &-submit {
+
+                        &:hover {
+                            color: $color-secundario;
+                            background-color: $color-principal;
+                            transition: all 0.5s ease;
+                            // font-size: 21px;
+                            outline: 1px solid $color-secundario;
+                            box-shadow: 0px 10px 24px -5px rgba(0, 0, 0, 0.62);
+                        }
+
+                    }
+                }
             }
-            
-            &__info{
+
+            &__info {
                 width: 30%;
-                height: 50%;
+                height: 40%;
                 margin-bottom: 0;
+
+                &:hover .contact__info-pin {
+                    scale: 1.5;
+                    transition: all 0.5s ease-out;
+
+                }
+
             }
         }
     }
