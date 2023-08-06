@@ -466,7 +466,12 @@ main {
   font-weight: bold;
   border-radius: 5px;
   height: 50px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+}
+.form-container .form__submit:active, .form-sign-container .form__submit:active, .form-sign-container .form-sign__submit:active {
+  background-color: #2A2C34;
+  color: #e7ab30;
+  transition: all 0.1s ease;
 }
 .form-container .form__social, .form-sign-container .form__social {
   display: flex;
